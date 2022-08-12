@@ -1,0 +1,32 @@
+*** Start of Indexing Strings Demo ***
+Type not empty string (q- to quit):
+bye monkey
+Type the character position within the string:
+4
+The character found at 4 position is 'm'
+Type not empty string (q- to quit):
+orange man
+Type the character position within the string:
+0
+The character found at 0 position is 'o'
+Type not empty string (q- to quit):
+Hello
+Type the character position within the string:
+5
+Too big... Position reduced to max. available
+The character found at 4 position is 'o'
+Type not empty string (q- to quit):
+lazy fox
+Type the character position within the string:
+-1
+Too big... Position reduced to max. available
+The character found at 7 position is 'x'
+Type not empty string (q- to quit):
+
+Type the character position within the string:
+0
+Too big... Position reduced to max. available
+The character found at -1 position is ''
+Type not empty string (q- to quit):
+q
+*** End of Indexing Strings Demo ***
