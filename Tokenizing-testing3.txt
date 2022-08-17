@@ -1,0 +1,136 @@
+Name:Haoyue Guo
+Student ID: 149771214
+
+#define _CRT_SECURE_NO_WARNINGS
+#define BUFFER_SIZE 300 
+#include "tokenizing.h"//include the header
+ 
+void tokenizing(void){
+ char sentences[BUFFER_SIZE];//declare string words
+ char* nextSentences = NULL;//declare char pointer
+ int sentencesCounter;//declare int type
+ printf("*** Start of Tokenizing Words Demo ***\n");//changed from PNG. provided: move it after the declaration
+ do{
+  printf("Type a few words separated by space (q - to quit):\n");//print statement
+  fgets(sentences, BUFFER_SIZE,stdin);//user indfput data
+  sentences[strlen(sentences)-1] = '\0';
+  if (strcmp(sentences,"q")!=0){//loop "p" and quit then
+   nextSentences = strtok(sentences," ");//function searches for a separator string within a larger string
+   sentencesCounter = 1;//initialize wordsCounter to 1
+   while(nextSentences){
+    printf("Sentences #%d is \'%s\'\n", sentencesCounter++, nextSentences);//print statement
+    nextSentences = strtok(NULL, " ");//get next word
+   }
+  }
+ }while(strcmp(sentences, "q")!=0);
+ printf("*** End of Tokenizing Words Demo ***\n\n");
+}
+
+int main(){ //added void main to compile function
+tokenizing();
+}
+ 
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+TEST1
+Input: Hi I am Claire, and this is the final project. There are four members in the group and our group leader is Jeel.
+Output:
+Type a few words separated by space (q - to quit):
+Sentences #1 is 'Hi'
+Sentences #2 is 'I'
+Sentences #3 is 'am'
+Sentences #4 is 'Claire,'
+Sentences #5 is 'and'
+Sentences #6 is 'this'
+Sentences #7 is 'is'
+Sentences #8 is 'the'
+Sentences #9 is 'final'
+Sentences #10 is 'project.'
+Sentences #11 is 'There'
+Sentences #12 is 'are'
+Sentences #13 is 'four'
+Sentences #14 is 'members'
+Sentences #15 is 'in'
+Sentences #16 is 'the'
+Sentences #17 is 'group'
+Sentences #18 is 'and'
+Sentences #19 is 'our'
+Sentences #20 is 'group'
+Sentences #21 is 'leader'
+Sentences #22 is 'is'
+Sentences #23 is 'Jeel.'
+
+TEST2
+Input: The course name is CPR and our teacher is John. We did two group activities, including presentation and the final project.
+Output:
+Type a few words separated by space (q - to quit):
+Sentences #1 is 'The'
+Sentences #2 is 'course'
+Sentences #3 is 'name'
+Sentences #4 is 'is'
+Sentences #5 is 'CPR'
+Sentences #6 is 'and'
+Sentences #7 is 'our'
+Sentences #8 is 'teacher'
+Sentences #9 is 'is'
+Sentences #10 is 'John.'
+Sentences #11 is 'We'
+Sentences #12 is 'did'
+Sentences #13 is 'two'
+Sentences #14 is 'group'
+Sentences #15 is 'activities,'
+Sentences #16 is 'including'
+Sentences #17 is 'presentation'
+Sentences #18 is 'and'
+Sentences #19 is 'the'
+Sentences #20 is 'final'
+Sentences #21 is 'project.'
+
+TEST3
+Input: i am excited to start the second semester. The first semester is hard for me, since i do not have any related background. But i improved a lot in the first semester.  
+Output: 
+Type a few words separated by space (q - to quit):
+Sentences #1 is 'i'
+Sentences #2 is 'am'
+Sentences #3 is 'excited'
+Sentences #4 is 'to'
+Sentences #5 is 'start'
+Sentences #6 is 'the'
+Sentences #7 is 'second'
+Sentences #8 is 'semester.'
+Sentences #9 is 'The'
+Sentences #10 is 'first'
+Sentences #11 is 'semester'
+Sentences #12 is 'is'
+Sentences #13 is 'hard'
+Sentences #14 is 'for'
+Sentences #15 is 'me,'
+Sentences #16 is 'since'
+Sentences #17 is 'i'
+Sentences #18 is 'do'
+Sentences #19 is 'not'
+Sentences #20 is 'have'
+Sentences #21 is 'any'
+Sentences #22 is 'related'
+Sentences #23 is 'background.'
+Sentences #24 is 'But'
+Sentences #25 is 'i'
+Sentences #26 is 'improved'
+Sentences #27 is 'a'
+Sentences #28 is 'lot'
+Sentences #29 is 'in'
+Sentences #30 is 'the'
+Sentences #31 is 'first'
+Sentences #32 is 'semester.'
