@@ -8,8 +8,7 @@
 	#include <string.h>
 	
 	/*
-		Purpose: Prompts the user to enter a non-empty string then prompts the user for a position in
-			     the string then outputs the corresponding character
+		Purpose: Prompts the user to enter a string that is not "q" then copies it to a destination string
 	*/
 	void fundamentals(void);
 #endif // !1
