@@ -1,32 +1,31 @@
 *** Start of Indexing Strings Demo ***
-Type not empty string (q- to quit):
-bye monkey
-Type the character position within the string:
-4
-The character found at 4 position is 'm'
-Type not empty string (q- to quit):
-orange man
-Type the character position within the string:
-0
-The character found at 0 position is 'o'
-Type not empty string (q- to quit):
-Hello
-Type the character position within the string:
-5
-Too big... Position reduced to max. available
-The character found at 4 position is 'o'
-Type not empty string (q- to quit):
-lazy fox
-Type the character position within the string:
--1
-Too big... Position reduced to max. available
-The character found at 7 position is 'x'
-Type not empty string (q- to quit):
+Destination string is reset to empty
+Type the source string (q - to quit) :
+The quick brown fox jumps over the lazy dog
+New destination string is 'The quick brown fox jumps over the lazy dog'
+Destination string is reset to empty
+Type the source string (q - to quit) :
+p
+New destination string is 'p'
+Destination string is reset to empty
+Type the source string (q - to quit) :
 
-Type the character position within the string:
-0
-Too big... Position reduced to max. available
-The character found at -1 position is ''
-Type not empty string (q- to quit):
+New destination string is ''
+Destination string is reset to empty
+Type the source string (q - to quit) :
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at lorem tellus.
+New destination string is 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at lorem tellus'
+Destination string is reset to empty
+Type the source string (q - to quit) :
+New destination string is ''
+Destination string is reset to empty
+Type the source string (q - to quit) :
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames nunce
+New destination string is 'Pellentesque habitant morbi tristique senectus et netus et malesuada fames nun'
+Destination string is reset to empty
+Type the source string (q - to quit) :
+New destination string is 'e'
+Destination string is reset to empty
+Type the source string (q - to quit) :
 q
 *** End of Indexing Strings Demo ***
